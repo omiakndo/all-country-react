@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Countries.css'
 
 function LoadCounrty(){
     const [countrys , setCountrys]= useState([])
@@ -8,7 +9,7 @@ function LoadCounrty(){
       .then(data => setCountrys(data))
     },[])
     return(
-      <div>
+      <div >
         <h1>Visit All Country In The WORLD!!!</h1>
         <h3>Available Countries: {countrys.length}</h3>
         {
@@ -20,8 +21,8 @@ function LoadCounrty(){
   
   function DisplayData(props){
     return(
-      <div>
-        <h2>Name: {props.name}</h2>
+      <div className='counties'>
+        <h2 className='country'>Name: {props.name}</h2>
       
       </div>
     )

@@ -1,0 +1,14 @@
+.country{
+   
+    background-color: blueviolet;
+    border: 3px solid gold;
+    border-radius: 20px;
+    margin: 20px;
+    color: aliceblue;
+    
+   padding: 10px;
+    
+}
+img{
+    width: 200px;
+}
